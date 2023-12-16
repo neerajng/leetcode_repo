@@ -34,27 +34,37 @@
 //     return true;
 // }
 
-const isAnagram = function(s, t) {
-    if (s.length !== t.length) {
-        return false;
+const isAnagram = function(s,t) {
+    if(s.length!==t.length){
+        return false
     }
     
-    var freq = new Array(26).fill(0);
-    console.log(freq)
-    for (var i = 0; i < s.length; i++) {
-        freq[s.charCodeAt(i) - 'a'.charCodeAt(0)]++;
-        freq[t.charCodeAt(i) - 'a'.charCodeAt(0)]--;
-    }
-    
-    for (var i = 0; i < freq.length; i++) {
-        if (freq[i] !== 0) {
-            return false;
+    const sLetters = {}
+
+    for(let char of s){
+        if(!sLetters[char]){
+            sLetters[char]=1
+        }else{
+            sLetters[char]++
         }
     }
-    
-    return true;
-};
 
+    for(let char of t){
+        if(!sLetters[char]){
+            return false
+        }
+
+        if(sLetters[char]){
+            sLetters[char]--
+        }
+
+        if(sLetters[char]===0){
+            delete sLetters[char]
+        }
+    }
+
+    return Object.keys(sLetters).length===0;
+}
 const s = "anagram"
 const t = "nagaram"
 
