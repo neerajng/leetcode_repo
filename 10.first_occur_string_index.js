@@ -1,5 +1,5 @@
 //oneline solution
-var strStr = (haystack, needle) => haystack.indexOf(needle);
+var strSt = (haystack, needle) => haystack.indexOf(needle);
 
 //without built in solution
 const strStr = function(haystack, needle) {
@@ -12,11 +12,11 @@ const strStr = function(haystack, needle) {
             }
         }
         else{
-            i=i-k;//1-
+            i=i-k;
             k=0;
         }
     }
     return -1
 };
 
-console.log(strStr('mississippi','issip'))
+console.log(strStr('chadbutsad','sad'))
