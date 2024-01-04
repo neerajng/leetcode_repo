@@ -5,8 +5,5 @@ const digitCount = function(num) {
     }
     return arr.join('')===num  
 };
-
-
-
 const _num = '1210'
 console.log(digitCount(_num)) 
