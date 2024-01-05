@@ -1,17 +1,13 @@
 const repeatedCharacter = function(s) {
-    
     let obj={}
-    
-    for(let i=0;i<s.length;i++){
-        if(!obj[s[i]]){
-            obj[s[i]]=1
-        }else if(obj[s[i]]===1){
-            return s[[i]]
+    for(let char of s){
+        if(!obj[char]){
+            obj[char]=1
+        }else {
+            return char
         }
     }
-    return obj
-
 };
 
-const _s='abccbaacz'
+const _s='abcbcbaacz'
 console.log(repeatedCharacter(_s))
