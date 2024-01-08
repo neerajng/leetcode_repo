@@ -4,6 +4,7 @@
 // };
 
 //without operator
+//Please do with binary search algorithm as it gives O(logn) time complexity.
 const mySqrt = function(x) {
     return x ** 0.5
 };
