@@ -7,4 +7,4 @@ const climbStairs = function(n){
 }
 
 const _n=4
-console.log(climbStairs(_n))//n is index and ways[n]===steps
+console.log(climbStairs(_n))
