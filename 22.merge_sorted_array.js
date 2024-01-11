@@ -1,13 +1,18 @@
 const merge = function (nums1, m, nums2, n) {
-    var insertPos = m + n - 1;//last index of nums1
-    console.log(m--, n--)
+    //last index of nums1
+    let insertPos = nums1.length - 1;
+    //last index of nums1(0 excludes) and nums2
+    m--; n--;
+
     while (n >= 0) {
+        console.log(m,n)
         nums1[insertPos--] = (nums1[m] > nums2[n]) ? nums1[m--] : nums2[n--];
+        console.log(nums1)
     }
-    return nums1
 };
 
-const nums1 = [1,2,3,0,0,0]
+const nums1 = [1,2,3,0,0,0]//[1,2,_,3,5,6]
 ,nums2 = [2,5,6]
 ,n = nums2.length, m = nums1.length-n;
-console.log(merge(nums1,m,nums2,n));
+merge(nums1,m,nums2,n)
+
