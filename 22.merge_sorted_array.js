@@ -11,8 +11,8 @@ const merge = function (nums1, m, nums2, n) {
     }
 };
 
-const nums1 = [1,2,3,0,0,0]//[1,2,_,3,5,6]
-,nums2 = [2,5,6]
+const nums1 = [4,5,6,0,0,0]//[1,2,_,3,5,6]
+,nums2 = [1,2,3]
 ,n = nums2.length, m = nums1.length-n;
 merge(nums1,m,nums2,n)
 
