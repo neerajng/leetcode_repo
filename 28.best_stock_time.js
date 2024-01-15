@@ -12,7 +12,5 @@ const maxProfit= function(prices){
     }     
     return max_profit;
 }
-
-
 const prices = [7,1,5,3,6,4]//[1,2]
 console.log(maxProfit(prices));
