@@ -1,4 +1,4 @@
-var captureForts = function (forts) {
+const captureForts = function (forts) {
   let res = 0;
   for (let i = 0, j = 0; i < forts.length; i++) {
     if (forts[i] != 0) {
