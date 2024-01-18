@@ -7,11 +7,12 @@ const convertToTitle=(colNum)=>{
             r=26
             q=q-1
         }
+        console.log(r,String.fromCharCode(64+r),q)
         res=String.fromCharCode(64+r)+res
         colNum=q
     }
     return res
 }
 
-let colNum=16384
+let colNum=26
 console.log(convertToTitle(colNum))
