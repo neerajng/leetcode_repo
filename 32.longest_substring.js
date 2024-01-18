@@ -7,18 +7,16 @@
     if(s.length<=1) return s.length
 
     for(let i=0;i<s.length;i++){
-
         while(set.has(s[i])){
-            set.delete(s[left])
+            set.delete(s[left])            
             left++
         }
-        
         set.add(s[i]);
         maxSize = Math.max(maxSize, i - left + 1)
     }
     return maxSize;
  }
 
- const s='pwwkew'//pw,wke
+
 
  console.log(lengthOfLongestSubstring(s));
