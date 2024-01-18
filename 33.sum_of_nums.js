@@ -1,6 +1,6 @@
 //sum of numbers without largest, smallest and second largest &smallest numbers.
 const a =Date.now()
-let arr=[4,3,4,5,6,6,7,2,8,10]
+let arr=[0,1,2,3,4,5,6,7,8,9,10,11,12,-1]
 let large=-Infinity
 let sec_large=-Infinity
 let small=Number.MAX_SAFE_INTEGER
