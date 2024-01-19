@@ -10,4 +10,5 @@ const isPalindrome = function(s) {
 
 const s = "ab_a"
 
+
 console.log(isPalindrome(s))

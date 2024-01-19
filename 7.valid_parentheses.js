@@ -26,5 +26,5 @@ const isValid = function(s){
     return stack.length===0
 }
 
-const string = "("
+const string = "()"
 console.log(isValid(string))
