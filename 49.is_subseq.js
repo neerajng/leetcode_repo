@@ -1,4 +1,4 @@
-//392
+//392. Is Subsequence
 const isSubsequence = function(s, t) {
     let i=0, j=0;
     while(i<s.length && j<t.length){
