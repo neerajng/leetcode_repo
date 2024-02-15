@@ -3,6 +3,7 @@ const digitCount = function(num) {
     for (let char of num){
        arr[Number(char)]++ 
     }
+  
     return arr.join('')===num  
 };
 const _num = '1210'
