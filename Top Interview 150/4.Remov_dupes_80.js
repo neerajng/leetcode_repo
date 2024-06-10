@@ -6,8 +6,8 @@ const removeDuplicates = (nums)=> {
             i++;
         }
     }
-    return nums;
+    return i;
 };
 
 const nums=[0,0,1,1,1,1,2,3,3];
-console.log(...removeDuplicates(nums));
+console.log(removeDuplicates(nums));
