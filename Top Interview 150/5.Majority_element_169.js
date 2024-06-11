@@ -6,6 +6,6 @@ const majorityElement =  (nums)=> {
     }
 }
 
-const nums = [2,2,1,1,1,2,2];
+const nums = [2,2,1,1,1,2,2, 2];
 
 console.log(majorityElement(nums));
