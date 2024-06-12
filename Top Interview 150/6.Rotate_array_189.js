@@ -28,5 +28,5 @@ const rotateArray2=(nums, k)=>{
     const firstPartRev=reverseArr(wholeRev,0,k-1)
     return reverseArr(firstPartRev,k,nums.length-1)
 }
-let nums = [1,2,3,4,5,6,7], k = 3;
+let nums = [1,2,3,4,5,6], k = 3;
 console.log(...rotateArray2(nums,k))
